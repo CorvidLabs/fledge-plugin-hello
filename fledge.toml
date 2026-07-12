@@ -1,0 +1,9 @@
+# fledge.toml — project task definitions
+[tasks]
+lint = "shellcheck hello.sh test-noninteractive.sh"
+syntax = "bash -n hello.sh test-noninteractive.sh"
+manifest = "grep -q 'protocol = \"fledge-v1\"' plugin.toml && grep -q 'binary = \"hello.sh\"' plugin.toml"
+
+[lanes.verify]
+description = "Lint and validate the fledge-v1 Bash reference plugin"
+steps = ["lint", "syntax", "manifest"]
