@@ -1,8 +1,8 @@
 # fledge.toml — project task definitions
 [tasks]
 lint = "shellcheck hello.sh test-noninteractive.sh"
-syntax = "bash -n hello.sh test-noninteractive.sh"
-manifest = "grep -q 'protocol = \"fledge-v1\"' plugin.toml && grep -q 'binary = \"hello.sh\"' plugin.toml"
+syntax = "bash -n hello.sh && bash -n test-noninteractive.sh"
+manifest = "python3 -c 'import pathlib, tomllib; data = tomllib.loads(pathlib.Path(\"plugin.toml\").read_text()); commands = [command for command in data.get(\"commands\", []) if command.get(\"name\") == \"hello\"]; assert data.get(\"plugin\", {}).get(\"protocol\") == \"fledge-v1\"; assert len(commands) == 1 and commands[0].get(\"binary\") == \"hello.sh\"'"
 
 [lanes.verify]
 description = "Lint and validate the fledge-v1 Bash reference plugin"

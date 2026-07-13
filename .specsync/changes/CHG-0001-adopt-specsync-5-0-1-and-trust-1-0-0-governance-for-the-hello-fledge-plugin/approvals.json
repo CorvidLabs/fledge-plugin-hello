@@ -13,6 +13,51 @@
       "timestamp": 1783954150,
       "digest": "5cba7d22833392db6790dbb8d08f443502d27378d2525b85f7c6382e400d1a45",
       "note": "Closing approval recorded after successful committed-head native verification with explicit requirement evidence."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783981703,
+      "digest": "a2fcdfd9e3761151364493038205830510769a81f1a9a2d441ed4a67c481a665",
+      "note": "Fresh closing approval after CHG-0002 native verification; prior canonical delta remains non-replaying"
+    }
+  ],
+  "reopenings": [
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-hello-fledge-plugin",
+      "actor": "user:0xLeif",
+      "reason": "CHG-0002 corrects shared governance verification inputs after review; record fresh evidence without replaying the accepted canonical delta",
+      "timestamp": 1783981692,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783954150,
+        "digest": "5cba7d22833392db6790dbb8d08f443502d27378d2525b85f7c6382e400d1a45",
+        "note": "Closing approval recorded after successful committed-head native verification with explicit requirement evidence."
+      },
+      "prior_verification": {
+        "timestamp": 1783954104,
+        "commit": "68052c5f7ad4ed9906ff7adef4e9027b8d72e474",
+        "contract_digest": "6ce6ea56b157cca69b4c6792fbc9fb8a2027d674bcbba2c818ae8cbb7d5618f1",
+        "workspace_digest": "19a8a14b07e5ab03a0e69c119889d5bf04872ef3ed057ee098c7a857f1c4ff4e",
+        "acceptance_input_digest": "1cdf314e167e4dc821494ecf1752ba3234037f73c77b494dde4db6f2b5ab179e",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": [
+          "REQ-hello-004"
+        ]
+      },
+      "stale_acceptance_input_digest": "1cdf314e167e4dc821494ecf1752ba3234037f73c77b494dde4db6f2b5ab179e",
+      "current_acceptance_input_digest": "f6a1bb9fba3103fab091b0cd086864d1e53105e113f5e6581506fa5481ba8a20"
     }
   ]
 }

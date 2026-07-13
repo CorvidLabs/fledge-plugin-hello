@@ -6,9 +6,10 @@
   "description": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for the Hello Fledge plugin",
   "kind": "migration",
   "state": "accepted",
+  "canonical_applied": true,
   "base_commit": "93db502c610db78d8dbdaeb87e6817603732a903",
   "created_at": 1783879091,
-  "updated_at": 1783954150,
+  "updated_at": 1783981703,
   "affected_specs": [
     "hello"
   ],

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0002-correct-hello-plugin-governance-verification-and-gemini-change-guidance",
+  "slug": "correct-hello-plugin-governance-verification-and-gemini-change-guidance",
+  "title": "Correct Hello plugin governance verification and Gemini change guidance",
+  "description": "Correct Hello plugin governance verification and Gemini change guidance",
+  "kind": "bug_fix",
+  "state": "accepted",
+  "canonical_applied": true,
+  "base_commit": "29eefd8119ad15876bffa6ffbea22af3caa5fe4f",
+  "created_at": 1783981600,
+  "updated_at": 1783981687,
+  "affected_specs": [],
+  "affected_paths": [
+    "fledge.toml",
+    ".specsync/sdd.json",
+    ".gemini/commands/specsync/create-change.toml"
+  ],
+  "no_spec_change": true,
+  "no_spec_change_rationale": "These corrections affect repository verification configuration and generated contributor guidance, not the Hello plugin runtime contract or behavior.",
+  "acceptance_criteria": [
+    "The syntax lane checks each Bash script independently; manifest validation parses TOML and verifies the hello command protocol and binary in one command record; Gemini guidance passes the displayed raw arguments through one shell-escaping step; native verification and strict SpecSync pass"
+  ],
+  "selected_artifacts": [
+    "context",
+    "testing",
+    "tasks"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}
