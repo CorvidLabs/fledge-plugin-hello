@@ -1,6 +1,6 @@
 ---
 module: hello
-version: 1
+version: 2
 status: active
 files:
   - hello.sh
@@ -67,3 +67,4 @@ Then the plugin demonstrates the protocol surfaces using JSON-lines messages and
 | Version | Date | Changes |
 |---------|------|---------|
 | 1 | 2026-07-12 | Document the existing fledge-v1 reference behavior for SpecSync 5 adoption. |
+| 2026-07-13 | CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-hello-fledge-plugin: Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for the Hello Fledge plugin |

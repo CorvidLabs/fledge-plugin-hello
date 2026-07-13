@@ -6,6 +6,13 @@
       "timestamp": 1783953990,
       "digest": "6ce6ea56b157cca69b4c6792fbc9fb8a2027d674bcbba2c818ae8cbb7d5618f1",
       "note": "Definition approved after artifact, review-correction, and preliminary native-verification audit."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783954150,
+      "digest": "5cba7d22833392db6790dbb8d08f443502d27378d2525b85f7c6382e400d1a45",
+      "note": "Closing approval recorded after successful committed-head native verification with explicit requirement evidence."
     }
   ]
 }

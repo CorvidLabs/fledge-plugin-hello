@@ -24,6 +24,10 @@ Every request SHALL use an identifier and wait for a response before consuming i
 
 The non-interactive example SHALL exercise deterministic one-way and request surfaces without requiring a user prompt.
 
+Acceptance Criteria
+- The native Fledge verification lane passes ShellCheck, Bash syntax, and manifest validation.
+- The non-interactive example remains available without requiring a live user prompt.
+
 ## Constraints
 
 - The scripts are examples of the host protocol and rely on Fledge for validation, rendering, persistence, and sandboxing.
