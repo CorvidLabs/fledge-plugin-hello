@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "enabled": true,
+  "require_change_for_meaningful_files": true,
+  "meaningful_paths": [
+    "hello.sh",
+    "test-noninteractive.sh",
+    "plugin.toml",
+    "fledge.toml",
+    ".trust.toml",
+    ".attest.json",
+    ".augur.toml",
+    "AGENTS.md",
+    ".github/",
+    ".specsync/sdd.json",
+    ".specsync/config.toml",
+    ".specsync/config.json",
+    ".specsync/version"
+  ],
+  "ignored_paths": [
+    ".specsync/",
+    "specs/"
+  ],
+  "verification_commands": [
+    "fledge lanes run verify"
+  ],
+  "custom_artifacts": {},
+  "principles_file": null
+}

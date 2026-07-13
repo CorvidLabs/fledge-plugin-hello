@@ -1,0 +1,26 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783981642,
+      "digest": "3a9af8b4ebca4215456e5b9ef78001fb6731109b419f4a6451c2df61857ca6aa",
+      "note": "Approved portable definition for governance-only review corrections"
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783981674,
+      "digest": "064c45f370a23d79d983b5526a9841b8b146632a574f0f44239ade73edbb6c7a",
+      "note": "Approved final portable definition after review-language cleanup"
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783981687,
+      "digest": "4f992bf482bd21e1132b056ce16666e2d2ad540c3252a666c56ee1144297cc4d",
+      "note": "Closing approval after structural manifest, independent syntax, Gemini guidance, and native lane verification"
+    }
+  ],
+  "reopenings": []
+}
