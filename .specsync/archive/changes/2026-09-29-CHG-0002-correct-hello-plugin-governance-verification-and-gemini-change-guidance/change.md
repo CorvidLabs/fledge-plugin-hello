@@ -1,6 +1,6 @@
 ---
 id: CHG-0002-correct-hello-plugin-governance-verification-and-gemini-change-guidance
-state: accepted
+state: archived
 type: bug_fix
 base_commit: 29eefd8119ad15876bffa6ffbea22af3caa5fe4f
 ---
